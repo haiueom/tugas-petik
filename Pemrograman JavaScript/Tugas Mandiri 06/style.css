@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main,
+.wm {
+    margin-top: auto;
+}
+
+.wm .wml {
+    text-decoration: none;
+}
+
+.wm .wml:hover {
+    text-decoration: underline;
+}

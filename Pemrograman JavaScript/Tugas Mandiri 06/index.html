@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<!--[ JavaScript - Tugas Mandiri 06 ]-->
+<!--[ Ilham Taufiq | 22255601012 ]-->
+<!--[ Rabu, 02 November 2022 ]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri 06 - Function javaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pico.min.css">
+</head>
+
+<body>
+    <main class="container main">
+        <div class="headings">
+            <h2>🔰 Tugas Mandiri 06 🔰</h2>
+            <h3>Aplikasi kalkulator sederhana berbasis web.</h3>
+        </div>
+
+        <form id="form">
+
+            <div class="grid">
+
+                <label for="num1">
+                    Angka 1
+                    <input type="number" id="num1" name="num1" placeholder="Masukkan angka" required>
+                </label>
+
+                <label for="num2">
+                    Angka 2
+                    <input type="number" id="num2" name="num2" placeholder="Masukkan angka" required>
+                </label>
+
+                <label for="anu">Operator
+                    <select id="anu" required>
+                        <option value="" selected>Pilih operator…</option>
+                        <option value="+">Penjumlahan</option>
+                        <option value="-">Pengurangan</option>
+                        <option value="*">Perkalian</option>
+                        <option value="/">Pembagian</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="hasil"></div>
+
+            <button type="submit" id="btn">Submit</button>
+
+        </form>
+
+    </main>
+    <div class="wm">
+        <p>Dibuat dengan ☕ oleh <a href="https://github.com/haiueom/" target="_blank" class="wml">Haiueom</a></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
