@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<!--[ JavaScript - Tugas Mandiri 12 ]-->
+<!--[ Ilham Taufiq | 22255601012 ]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Mandiri 07 - Array & Object javaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./pico.min.css" />
+</head>
+
+<body>
+    <div class="judul">
+        <h1>🔰 Pendaftaran Mahasantri 🔰</h1>
+    </div>
+
+    <main class="container main">
+        <form id="frm">
+            <label for="lkp">
+                <b>Nama Lengkap</b>
+                <input type="text" id="lkp" name="lkp" placeholder="Nugiono Bagas Raja" required />
+            </label>
+
+            <div class="grid">
+                <label for="pgl">
+                    <b>Nama Panggilan</b>
+                    <input type="text" id="pgl" name="pgl" placeholder="Nugi" required />
+                </label>
+
+                <label for="tgl">
+                    <b>Tanggal Lahir</b>
+                    <input type="date" id="tgl" name="tgl">
+                </label>
+            </div>
+
+            <div class="grid">
+                <label for="eml">
+                    <b>Alamat Email</b>
+                    <input type="email" id="eml" name="eml" placeholder="contoh@email.com" required />
+                </label>
+
+                <label for="nmr">
+                    <b>Nomor Telepon</b>
+                    <input type="tel" id="nmr" name="nmr" placeholder="08xxxxxxxxxx" required />
+                </label>
+            </div>
+
+            <label for="jrs">
+                <b>Jurusan Pilihan</b>
+                <select id="jrs" required>
+                    <option value="" selected>Pilih jurusan...</option>
+                    <option value="ppl">Pemrograman Perangkat Lunak</option>
+                    <option value="dm">Digital Marketing</option>
+                </select>
+            </label>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+
+        <div id="anu" style="display: none;">
+            <div class="headings" style="margin-bottom: 3rem;">
+                <h2>📝 Data Pendaftar</h2>
+                <p>Silahkan dicek kembali sebelum mengirim data kamu.</p>
+            </div>
+            <div id="dat"></div>
+            <div style="margin-top: 3rem;">
+                <p>Tekan tombol edit untuk mengedit data, oke untuk mengirim data.</p>
+                <button id="edt" style="width: 10rem;display: inline-block;">Edit</button>
+                <button id="oke" style="width: 10rem;display: inline-block;">Oke</button>
+            </div>
+        </div>
+
+        <div id="fnl" style="display: none;">
+            <h2>✨ Data Berhasil dikirim!</h2>
+            <p>Silahkan tunggu beberapa saat, kami akan mengirimkan informasi selanjutnya melalui email.</p>
+            <a id="kem"><- Kembali ke halaman awal</a>
+        </div>
+
+    </main>
+
+    <div class="wm">
+        <p>
+            Dibuat dengan ☕ oleh
+            <a href="https://github.com/haiueom/" target="_blank" class="wml">Haiueom</a>
+        </p>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>
