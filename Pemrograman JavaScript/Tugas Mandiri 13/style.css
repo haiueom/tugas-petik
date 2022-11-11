@@ -1,0 +1,17 @@
+.judul {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.kotak {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kotak img {
+    width: 15rem;
+}
